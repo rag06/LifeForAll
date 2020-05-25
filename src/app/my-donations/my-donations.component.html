@@ -3,6 +3,16 @@
 </ActionBar>
 
 <GridLayout>
-    <Label text="MyDonationsComponent Page"></Label>
-    
+
+    <StackLayout orientation="vertical">
+        <ListView [items]="countries" (itemTap)="onItemTap($event)">
+            <ng-template let-country="item">
+                <FlexboxLayout flexDirection="row">
+                    <Image [src]="country.imageSrc" class="thumb img-circle"></Image>
+                    <Label [text]="country.name" class="t-12"
+                        verticalAlignment="center" style="width: 60%"></Label>
+                </FlexboxLayout>
+            </ng-template>
+        </ListView>
+    </StackLayout>
 </GridLayout>
