@@ -1,5 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
 import { RadSideDrawerComponent } from "nativescript-ui-sidedrawer/angular/side-drawer-directives";
+import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
     selector: "ns-app",
@@ -19,5 +20,15 @@ export class AppComponent {
     }
 
     message = "You have successfully authenticated. This is where you build your core application functionality.";
+
+    constructor(
+        private _routerExtensions: RouterExtensions) {
+
+    }
+    onNavigationItemTap(ref) {
+        console.log(ref);
+        this._routerExtensions.navigate(["/myDonations"]);
+        this.drawerComponent.sideDrawer.closeDrawer();
+    }
 
 }

@@ -9,7 +9,7 @@
             <ScrollView row="1">
                 <StackLayout class="sidedrawer-content">
                     <GridLayout columns="auto, *" class="sidedrawer-list-item"
-                        title="My Donation" tap="onNavigationItemTap">
+                        title="My Donation" (tap)="onNavigationItemTap('myDonations')">
                         <Label row="0" col="1" text="My Donation" class="var m-l-10 sidedrawer-item"></Label>
                     </GridLayout>
                     <StackLayout class="hr-light"></StackLayout>
