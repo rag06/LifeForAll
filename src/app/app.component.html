@@ -1,1 +1,46 @@
-<page-router-outlet></page-router-outlet>
+<RadSideDrawer  drawerTransition="PushTransition"> 
+        <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
+            
+            <StackLayout class="sidedrawer-header text-center">
+                <Image src="~/asset/images/logo.png" class="img-rounded img-circle m-b-20"></Image>
+                <Label class="sidedrawer-header-text h3 text-white" text="Anurag Singh"></Label>
+                <Label class="sidedrawer-header-footnote var" text="AB+"></Label>
+            </StackLayout>
+            <ScrollView row="1">
+                <StackLayout class="sidedrawer-content">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="My Donation" tap="onNavigationItemTap">
+                        <Label row="0" col="1" text="My Donation" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+                    <StackLayout class="hr-light"></StackLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="Requester" tap="onNavigationItemTap">
+                        <Label row="0" col="1" text="Requester" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+                    <StackLayout class="hr-light"></StackLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="My Profile" tap="onNavigationItemTap">
+                        <Label row="0" col="1" text="My Profile" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+                    <StackLayout class="hr-light"></StackLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="My Messages" tap="onNavigationItemTap">
+                        <Label row="0" col="1" text="My Messages" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+                    <StackLayout class="hr-light"></StackLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="View Donors" tap="onNavigationItemTap">
+                        <Label row="0" col="1" text="View Donors" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+                    <StackLayout class="hr-light"></StackLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="Raise a Request" tap="onNavigationItemTap">
+                        <Label row="0" col="1" text="Raise a Request" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+    <page-router-outlet tkMainContent class="page page-content"></page-router-outlet>
+    </RadSideDrawer>
+    

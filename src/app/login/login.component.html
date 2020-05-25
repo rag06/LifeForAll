@@ -1,0 +1,19 @@
+<FlexboxLayout class="login-background page">
+    <StackLayout width="100%" class="login-form nt-form">
+        <Image class="logo" src="~/asset/images/logo.png"></Image>
+        <Label text="Life For All" class="h1 text-center text-primary">
+        </Label>
+        <GridLayout rows="auto, auto, auto">
+            <StackLayout row="0" class="nt-input">
+                <Label text="Email" class="text-left font-weight-bold m-b-5"></Label>
+                <TextField hint="Email" keyboardType="email" autocorrect="false"></TextField>
+            </StackLayout>
+            <StackLayout row="1" class="nt-input">
+                <Label  text="Password" class="font-weight-bold m-b-5" ></Label>
+                <TextField hint="Password" secure="true"></TextField>
+            </StackLayout>
+            <ActivityIndicator rowSpan="2" [busy]="false"></ActivityIndicator>
+        </GridLayout>
+        <Button class="btn btn-primary" (tap)="submitLogin()" text="Login"></Button>
+    </StackLayout>
+</FlexboxLayout>

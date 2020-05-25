@@ -1,0 +1,31 @@
+.sidedrawer-header {
+    min-height: 300px;
+    padding: 20px;
+    padding-top: 100px;
+    color: #fff;
+}
+.img-circle{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.sidedrawer-list-item {
+    padding-left: 30;
+    font-size: 16;
+    height: 80;
+}
+
+.sidedrawer-item {
+    vertical-align:center;
+}
+
+.sidedrawer-list-item-active {
+    background-color: #980000;
+    color: #fff;
+}
+
+.hr-light {
+    background-color: #980000;
+    height: 2px;
+}
