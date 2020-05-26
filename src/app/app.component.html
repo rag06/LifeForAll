@@ -9,7 +9,7 @@
             <ScrollView row="1">
                 <StackLayout class="sidedrawer-content">
                     <GridLayout columns="auto, *" class="sidedrawer-list-item"
-                        title="Home"tap="onNavigationItemTap">
+                        title="Home" (tap)="onNavigationItemTap('home')">
                         <Label row="0" col="1" text="Home" class="var m-l-10 sidedrawer-item"></Label>
                     </GridLayout>
                     <StackLayout class="hr-light"></StackLayout>
@@ -19,7 +19,7 @@
                     </GridLayout>
                     <StackLayout class="hr-light"></StackLayout>
                     <GridLayout columns="auto, *" class="sidedrawer-list-item"
-                        title="Requester" tap="onNavigationItemTap">
+                        title="Requester" (tap)="onNavigationItemTap('requester')">
                         <Label row="0" col="1" text="Requester" class="var m-l-10 sidedrawer-item"></Label>
                     </GridLayout>
                     <StackLayout class="hr-light"></StackLayout>

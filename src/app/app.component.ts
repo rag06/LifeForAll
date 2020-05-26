@@ -27,7 +27,20 @@ export class AppComponent {
     }
     onNavigationItemTap(ref) {
         console.log(ref);
-        this._routerExtensions.navigate(["/myDonations"]);
+        switch (ref) {
+            case "home":
+                this._routerExtensions.navigate(["/home"]);
+                break;
+            case "myDonations":
+                this._routerExtensions.navigate(["/myDonations"]);
+                break;
+            case "requester":
+                this._routerExtensions.navigate(["/requester"]);
+                break;
+        
+            default:
+                break;
+        }
         this.drawerComponent.sideDrawer.closeDrawer();
     }
 

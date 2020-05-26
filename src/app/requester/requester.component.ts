@@ -5,13 +5,13 @@ import { ItemEventData } from "tns-core-modules/ui/list-view/list-view";
 import { UserCard } from "~/app/shared/user-card/user-card.model";
 
 @Component({
-    selector: "MyDonations",
-    templateUrl: "./my-donations.component.html",
-    styleUrls: ["./my-donations.component.css"]
+    selector: "Requester",
+    templateUrl: "./requester.component.html",
+    styleUrls: ["./requester.component.css"]
 })
-export class MyDonationsComponent implements OnInit {
+export class RequesterComponent implements OnInit {
 
-    donorsList:UserCard [] = [
+    requesterList:UserCard [] = [
         {fullName: "Anurag Singh", gender: "Male", date: "12th March, 2020", image: null, userId: "ss-ss-ss", bloodGroup:"AB+"},
         {fullName: "Anurag Singh", gender: "Male", date: "12th March, 2020", image: null, userId: "ss-ss-ss", bloodGroup:"AB+"},
         {fullName: "Anurag Singh", gender: "Male", date: "12th March, 2020", image: null, userId: "ss-ss-ss", bloodGroup:"AB+"},

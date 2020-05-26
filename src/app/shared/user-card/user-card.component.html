@@ -1,0 +1,29 @@
+
+<FlexboxLayout flexDirection="row">
+    <Image flexGrow="1" src="~/asset/images/logo.png" class="thumb img-rounded"></Image>
+    <StackLayout flexGrow="2" orientation="vertical" >
+        <Label class="h4" textwrap="true"
+            verticalAlignment="bottom"
+            horizontalAlignment="left"
+            text="{{user?.fullName}}">
+        </Label>
+        <FlexboxLayout flexDirection="row">
+                <Label flexGrow="1"  class="" textwrap="true"
+                verticalAlignment="bottom"
+                horizontalAlignment="left"
+                text="{{user?.bloodGroup}}">
+            </Label>
+            <Label flexGrow="2"  class="" textwrap="true"
+                verticalAlignment="bottom"
+                horizontalAlignment="left"
+                text="{{user?.gender}}">
+            </Label>
+            <Label flexGrow="3"  class="" textwrap="true"
+                verticalAlignment="bottom"
+                horizontalAlignment="left"
+                text="{{user?.date}}">
+            </Label>
+        </FlexboxLayout>
+       
+    </StackLayout>
+</FlexboxLayout>

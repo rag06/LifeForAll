@@ -9,7 +9,6 @@ import { RouterExtensions } from "nativescript-angular/router";
 })
 export class LoginComponent implements OnInit {
 
-
     constructor(private _page: Page,
         private _routerExtensions: RouterExtensions) {
         this._page.actionBarHidden = true;
@@ -19,6 +18,9 @@ export class LoginComponent implements OnInit {
         // Init your component properties here.
     }
     submitLogin () {
+        this._routerExtensions.navigate(["/home"], { clearHistory: true });
+    }
+    submitRegister () {
         this._routerExtensions.navigate(["/home"], { clearHistory: true });
     }
 }

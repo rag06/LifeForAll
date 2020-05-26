@@ -3,15 +3,10 @@
 </ActionBar>
 
 <GridLayout>
-
-    <StackLayout orientation="vertical">
-        <ListView [items]="countries" (itemTap)="onItemTap($event)">
-            <ng-template let-country="item">
-                <FlexboxLayout flexDirection="row">
-                    <Image [src]="country.imageSrc" class="thumb img-circle"></Image>
-                    <Label [text]="country.name" class="t-12"
-                        verticalAlignment="center" style="width: 60%"></Label>
-                </FlexboxLayout>
+    <StackLayout orientation="vertical" >
+        <ListView [items]="donorsList"  height="100%" (itemTap)="onItemTap($event)">
+            <ng-template let-donor="item">
+                <user-card [user]="donor"></user-card>
             </ng-template>
         </ListView>
     </StackLayout>
